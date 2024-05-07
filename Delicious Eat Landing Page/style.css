@@ -142,25 +142,23 @@ nav ul li:last-child {
     }
 }
 
-/* General styles */
 .hamburger-menu {
-    display: none;  /* Hide by default */
+    display: none;  
     flex-direction: column;
     justify-content: space-around;
-    width: 30px;  /* Initial width */
-    height: 25px; /* Initial height */
+    width: 30px; 
+    height: 25px; 
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
 .hamburger-menu .bar {
     width: 100%;
-    height: 3px; /* Initial bar thickness */
+    height: 3px; 
     background-color: #333;
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Responsive adjustments for larger hamburger menu */
 @media (max-width: 768px) {
     .hamburger-menu {
         display: flex; 
@@ -207,49 +205,48 @@ nav ul li:last-child {
 /* Media query for tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
-        padding: 0 10px; /* Adjust padding for tablet screens */
+        padding: 0 10px; 
     }
 
     .logo h1 a {
-        font-size: 22px; /* Slightly smaller font size for tablets */
+        font-size: 22px;
     }
 
     nav ul li {
-        margin-right: 15px; /* Adjust spacing between nav items */
+        margin-right: 15px;
     }
 
     nav ul li a {
-        font-size: 16px; /* Adjust font size for better readability on tablets */
+        font-size: 16px; 
     }
 
     .dropdown-content li a {
-        padding: 10px 12px; /* Adjust dropdown padding */
+        padding: 10px 12px; 
     }
 
-    /* Adjust the hamburger menu size and spacing for tablets if visible */
     .hamburger-menu {
-        width: 35px; /* Adjusted width for tablets */
-        height: 30px; /* Adjusted height for tablets */
+        width: 35px; 
+        height: 30px; 
     }
 
     .hamburger-menu .bar {
-        height: 3px; /* Maintain bar thickness */
-        margin: 4px 0; /* Slightly less spacing between bars */
+        height: 3px; 
+        margin: 4px 0;
     }
 
     .cta .cart-link {
-        padding: 6px 10px; /* Slightly smaller button on tablets */
+        padding: 6px 10px;
     }
 
     .cta .cart-link i {
-        font-size: 14px; /* Slightly smaller icon size */
+        font-size: 14px;
     }
 }
 
 /* Additional responsiveness below 768px for mobile devices */
 @media (max-width: 768px) {
     .hamburger-menu {
-        display: flex; /* Ensure hamburger is always visible on mobile */
+        display: flex; 
     }
 
     nav ul {
@@ -258,12 +255,12 @@ nav ul li:last-child {
         left: 0;
         width: 100%;
         background-color: #f8f8f8;
-        display: none; /* Hide the navigation links initially */
+        display: none;
         flex-direction: column;
     }
 
     nav ul.active {
-        display: flex; /* Display navigation links when active */
+        display: flex; 
     }
 
     nav ul li {
@@ -386,7 +383,6 @@ nav ul li:last-child {
 }
 
 /* Responsive Media Queries for the Hero Section */
-
 /* For tablets */
 @media (max-width: 768px) {
     .hero-content {
@@ -394,44 +390,44 @@ nav ul li:last-child {
     }
 
     .text-content, .image-content {
-        flex: 1 1 100%; /* Full width for both text and image */
+        flex: 1 1 100%;
     }
 
     .text-content h1 {
-        font-size: 36px; /* Adjusted font size for tablets */
+        font-size: 36px; 
     }
 
     .text-content p {
-        font-size: 16px; /* Smaller paragraph font size for better readability */
+        font-size: 16px; 
     }
 
     .image-content img {
-        max-width: 80%; /* Reduce image size to better fit the layout */
-        margin: 0 auto; /* Center the image */
+        max-width: 80%;
+        margin: 0 auto; 
     }
 }
 
 /* For mobile phones */
 @media (max-width: 480px) {
     .hero {
-        padding: 50px 0; /* Reduced padding for smaller screens */
+        padding: 50px 0; 
     }
 
     .text-content h1 {
-        font-size: 28px; /* Smaller header font size for mobile */
+        font-size: 28px; 
     }
 
     .text-content p {
-        font-size: 14px; /* Smaller paragraph font size for mobile */
+        font-size: 14px; 
     }
 
     .text-content .btn {
-        padding: 10px 20px; /* Adjust button padding */
-        font-size: 16px; /* Adjust button font size */
+        padding: 10px 20px;
+        font-size: 16px;
     }
 
     .image-content img {
-        max-width: 100%; /* Full width images on small screens */
+        max-width: 100%; 
     }
 }
 
@@ -457,8 +453,8 @@ nav ul li:last-child {
     padding: 20px;
     margin-bottom: 40px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative; /* Position relative for pseudo-elements */
-    overflow: hidden; /* Ensures no overflow from pseudo-elements */
+    position: relative; 
+    overflow: hidden;
 }
 
 .special-item img {
@@ -500,7 +496,6 @@ nav ul li:last-child {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Unique hover effect using pseudo-elements for visual flair */
 .special-item::before {
     content: '';
     position: absolute;
@@ -514,7 +509,7 @@ nav ul li:last-child {
 }
 
 .special-item:hover::before {
-    opacity: 1; /* Fade in a tint on hover */
+    opacity: 1;
 }
 
 @keyframes slideInFromRight {
@@ -528,50 +523,51 @@ nav ul li:last-child {
     }
 }
 
-/* Large screens */
+/* Media Queries for Large screens */
 @media (min-width: 1024px) {
     .special-item {
-        width: calc(25% - 20px);  /* Adjust for four items per row */
+        width: calc(25% - 20px); 
     }
 }
 
 /* Medium screens, typically tablets */
 @media (max-width: 1023px) and (min-width: 768px) {
     .special-item {
-        width: calc(33.333% - 20px); /* Adjust for three items per row */
+        width: calc(33.333% - 20px); 
     }
 }
 
 /* Small screens, large phones */
 @media (max-width: 767px) and (min-width: 480px) {
     .special-item {
-        width: calc(50% - 20px); /* Adjust for two items per row */
+        width: calc(50% - 20px);
     }
 }
 
 /* Extra small screens, small phones */
 @media (max-width: 479px) {
     .nigerian-specials .container {
-        padding: 0 10px; /* Reduce padding for very small devices */
+        padding: 0 10px; 
     }
     .special-item {
-        width: 100%; /* Single column layout */
-        margin-bottom: 20px; /* Reduce margin */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
     .special-item img {
-        height: 150px; /* Adjust image height for smaller devices */
+        height: 150px; 
     }
     .special-item h2 {
-        font-size: 18px; /* Smaller font size for headings */
+        font-size: 18px;
     }
     .special-item p {
-        font-size: 14px; /* Smaller font size for paragraph text */
+        font-size: 14px; 
     }
     .special-item .order-btn {
-        padding: 8px 16px; /* Smaller button */
-        font-size: 14px; /* Smaller button text */
+        padding: 8px 16px; 
+        font-size: 14px;
     }
 }
+
 /*=====About us=====*/
 .about-us {
     background-color: #fff; 
@@ -613,13 +609,13 @@ nav ul li:last-child {
 
 .about-section {
     text-align: justify;
-    animation: slideInFromLeft 2s ease-out; /* Slower slide-in for narrative impact */
+    animation: slideInFromLeft 2s ease-out; 
 }
 
 .team-section {
     margin-top: 80px;
     margin-bottom: 80px;
-    animation: fadeIn 1.5s ease-out; /* Slower fade-in for dramatic team reveal */
+    animation: fadeIn 1.5s ease-out; 
 }
 
 .team-members {
@@ -632,7 +628,7 @@ nav ul li:last-child {
 .team-member {
     text-align: center;
     margin-bottom: 60px;
-    animation: rotateIn 1s ease-in-out; /* Rotate animation for each team member */
+    animation: rotateIn 1s ease-in-out; 
 }
 
 @keyframes rotateIn {
@@ -661,7 +657,7 @@ nav ul li:last-child {
 .awards-section {
     margin-top: 80px;
     margin-bottom: 80px;
-    animation: slideInFromRight 2s ease-out; /* Distinctive slide-in for awards for emphasis */
+    animation: slideInFromRight 2s ease-out; 
 }
 
 .awards-section p {
@@ -713,8 +709,6 @@ nav ul li:last-child {
     right: 10px;
 }
 
-
-
 /* Media Queries for Responsive Design */
 
 /* For tablets */
@@ -733,7 +727,7 @@ nav ul li:last-child {
     }
 
     .team-member {
-        flex-basis: 50%; /* Adjust layout to 2 columns for team members */
+        flex-basis: 50%;
         margin-bottom: 30px;
     }
 
@@ -763,11 +757,11 @@ nav ul li:last-child {
     }
 
     .team-members {
-        flex-direction: column; /* Stack team members vertically on small screens */
+        flex-direction: column;
     }
 
     .team-member {
-        flex-basis: 100%; /* Full width for each team member */
+        flex-basis: 100%; 
         margin-bottom: 20px;
     }
 
@@ -782,12 +776,11 @@ nav ul li:last-child {
     }
 }
 
-/* Ensuring team section and awards have proper alignment and sizing */
 .team-members, .awards-section {
-    padding: 0 5px; /* Adjust padding for smaller screens */
+    padding: 0 5px; 
 }
 
-/*=====Menu styling=====*/
+/*===== Menu styling =====*/
 .menu {
     padding: 80px 0;
     background-color: #f9f9f9;
@@ -903,13 +896,13 @@ nav ul li:last-child {
 
 @media (max-width: 1024px) {
     .menu-item {
-        width: 250px; /* Slightly smaller width on tablet devices */
+        width: 250px; 
     }
 }
 
 @media (max-width: 768px) {
     .menu-item {
-        width: 220px; /* Even smaller width on mobile devices */
+        width: 220px; 
     }
     .menu-items {
         justify-content: space-around;
@@ -927,7 +920,7 @@ nav ul li:last-child {
         font-size: 14px;
     }
     .menu-item {
-        width: 100%; /* Full width on small screens */
+        width: 100%;
         margin: 0 auto 20px;
     }
 }
@@ -954,22 +947,22 @@ nav ul li:last-child {
 .testimonial {
     margin-bottom: 20px;
     padding: 20px;
-    border: 1px solid #ddd; /* Subtle border for each testimonial */
-    background-color: white; /* White background for each testimonial block */
-    border-radius: 8px; /* Rounded corners for the container */
+    border: 1px solid #ddd; 
+    background-color: white; 
+    border-radius: 8px;
 }
 
 .testimonial-content p {
     font-style: italic;
-    color: #666; /* Dark grey text for the quote */
+    color: #666; 
     line-height: 1.6;
     position: relative;
 }
 
 .testimonial-content p:before {
-    content: "\201C"; /* Open quote */
+    content: "\201C"; 
     font-size: 36px;
-    color: #ff6347; /* Theme color for quotes */
+    color: #ff6347; 
     position: absolute;
     left: -20px;
     top: -10px;
@@ -985,7 +978,7 @@ nav ul li:last-child {
 .testimonial-image {
     width: 50px;
     height: 50px;
-    border-radius: 50%; /* Makes the image circular */
+    border-radius: 50%; 
     margin-right: 10px;
 }
 
@@ -1023,11 +1016,11 @@ nav ul li:last-child {
     }
 
     .testimonial-content p {
-        font-size: 16px; /* Slightly smaller font size for better readability */
+        font-size: 16px; 
     }
 
     .testimonial-content p:before {
-        font-size: 30px; /* Smaller quote icon */
+        font-size: 30px; 
     }
 }
 
@@ -1041,22 +1034,22 @@ nav ul li:last-child {
     }
 
     .testimonial-content p {
-        font-size: 14px; /* Further reduce font size for small screens */
+        font-size: 14px; 
     }
 
     .testimonial-content p:before {
-        left: -15px; /* Adjust quote icon position */
+        left: -15px;
         top: -8px;
-        font-size: 24px; /* Much smaller quote icon for small screens */
+        font-size: 24px; 
     }
 
     .testimonial-content cite {
-        font-size: 16px; /* Smaller text for citations */
+        font-size: 16px; 
     }
 
     .testimonial-image {
         width: 40px;
-        height: 40px; /* Smaller images on very small screens */
+        height: 40px; 
     }
 }
 
@@ -1309,13 +1302,13 @@ nav ul li:last-child {
     }
 
     .footer-info, .footer-links, .footer-social, .footer-about, .footer-newsletter {
-        flex-basis: 50%; /* More space for each on smaller desktops/tablets */
+        flex-basis: 50%; 
     }
 }
 
 @media (max-width: 768px) {
     .footer-info, .footer-links, .footer-social, .footer-about, .footer-newsletter {
-        flex-basis: 100%; /* Stack vertically on mobile */
+        flex-basis: 100%; 
         text-align: center;
         margin-bottom: 20px;
     }
@@ -1325,7 +1318,7 @@ nav ul li:last-child {
     }
 
     .footer-newsletter input[type="email"] {
-        margin-bottom: 10px; /* Space between inputs */
+        margin-bottom: 10px; 
         margin-right: 0;
     }
 }
@@ -1336,10 +1329,10 @@ nav ul li:last-child {
     }
 
     .footer-links ul li a, .footer-social ul li a {
-        font-size: 14px; /* Smaller font size for smaller screens */
+        font-size: 14px; 
     }
 
     .footer-bottom p, .footer-bottom a {
-        font-size: 14px; /* Smaller text in footer bottom */
+        font-size: 14px; 
     }
 }
